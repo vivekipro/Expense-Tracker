@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker by Vivek Kumar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/995704d20b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ! Budget-->
+    <form class="form budget">
+        <h3>Enter Your Budget</h3>
+        <input
+            id="budget"
+            class="input"
+            type="number"
+            placeholder="Enter Amount"
+            value=""
+            autofocus
+            required
+        />
+        <button class="submitBtn" id="budgetbtn">Add Budget</button>
+    </form>
+
+
+    <!-- ! Expense Form -->
+    <form class="form">
+        <h3>Add new transaction</h3>
+        <label for="expenseText">Expense Details</label>
+        <input
+            id="expenseText"
+            class="input"
+            type="text"
+            placeholder="Enter text..."
+            required
+        />
+        <div>
+            <label for="expenseAmount">Amount</label>
+            
+        </div>
+        <input
+            class="input"
+            id="expenseAmount"
+            type="number"
+            placeholder="Enter amount..."
+            required
+        />
+        <button class="submitBtn" id="addamtbtn">Add Transaction</button>
+    </form>
+
+    <!-- ! Expense info -->
+    <div class="expenseInfoContainer">
+        <div class="balance">
+            <h4>Budget</h4>
+            <h1 id="totalbudget">$0</h1> 
+        </div>
+        <div class="incomeExpenseContainer">
+            <div>
+                <h4>Expense</h4>
+                <p id="moneyplus" class="money plus">$0</p> 
+            </div>
+            <div>
+                <h4>Balance Budget</h4>
+                <p id="moneyminus" class="money minus">$0</p> 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- !transition show -->
+    <div class="expenseInfoContainer">
+        <table class="expenseTable">
+            <thead>
+                <tr>
+                    <th>Expense Title</th>
+                    <th>Expense Value</th>
+                    <th>Expense Delete</th>
+                    <th>Expense Update</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- <tr>
+                    <td>Expense 1</td>
+                    <td class="expenseAmount">-$100.00</td>
+                    <td>Delete</td>
+                </tr>
+                <tr>
+                    <td>Expense 2</td>
+                    <td class="expenseAmount">-$50.00</td>
+                    <td>Delete</td>
+                </tr> -->
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
